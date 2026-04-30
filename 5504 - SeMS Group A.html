@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="%%description%%" name="description"> <!-- LINKS -->
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css" />
+    <base href="http://go.pardot.com">
+    <title>You are a SeMS Mentor!</title> 
+    
+    <!-- Google Tag Manager -->
+<script>
+  (function(w,d,s,l,i){
+    w[l]=w[l]||[];
+    w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),
+        dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;
+    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-T883LZ');
+</script>
+<!-- End Google Tag Manager -->
+
+    
+    <!-- STYLE CSS -->
+    <style type="text/css">
+        /* Font for headlines */
+        h1, h2, h3 {
+        	font-family: 'aktiv-grotesk', 'Arial', sans-serif;
+        }
+        
+        /* Font colors and size for headlines */
+        h1 {
+        	color: #000;
+        	font-size: 48px;
+        	line-height: 50px;
+        	margin: 0;
+        	font-weight: 700;
+        	
+        }
+        h2 {
+        	color: #000;
+        	font-size: 22px;
+        	line-height: 35px;
+        	font-weight: normal;
+        	margin: 0;
+        }
+        h3 {
+        	font-size: 20px;
+        	line-height: 28px;
+        	color: #000;
+        	margin: 0;
+        }
+                
+            ul {
+                list-style-image: url(https://go.updates.iata.org/l/123902/2023-04-21/j1thpc/123902/1682099686B7T7gGZt/bullet.svg);
+                font-size: 14px;
+        	line-height: 20px;
+        	color: #000;
+        	margin: 15px;
+                padding: 0px 0px;
+                vertical-align: top;
+                
+            }
+        	
+            ul li {
+                padding-left: 5px;
+                
+                }
+        	
+        /* Header */
+        #header {
+        display: flex;
+        flex-wrap: wrap;
+        }
+        #header .col {
+        text-align: left;
+        color: #fff;
+        font-size: 24px;
+        line-height: 125%;
+        }
+        #header .col-left {
+        background-color: #FAC832;
+        }
+        #header .col-right {
+        background-image: url('https://go.updates.iata.org/l/123902/2023-05-02/j1vchy/123902/1683061996Q84G9BBl/right_background_image_groupA.webp');
+        		background-repeat: no-repeat;
+        		background-size: cover;
+                    align-items: center;
+        }
+        
+        .parent-div {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+        }
+        
+        .child-element {
+          flex-grow: 1;
+        }    
+        	
+        /* Font colors, size and type for body copy */
+        body {
+        	font-family: 'Arial', sans-serif;
+        	color: #757575;
+        	font-size: 15px;
+        	line-height: 25px;
+        	background-color: #FFF;
+        }
+        
+            .vcenter-item{
+            display: flex;
+            align-items: center;
+        }
+                
+                
+        /* Header section */
+        	.header {
+        		display: flex;
+                    align-items: center;
+        		flex-wrap: wrap;
+        		height: 700px;
+        		background-color: #FAC832;
+        	}
+        
+        	/* Left column */
+        	.left {
+        		flex: 1;
+        		background-color: #FAC832;
+                    align-items: center;
+        	}
+        
+        	/* Right column */
+        	.right {
+        		flex: 1;
+        		height: 700px;
+        		background-image: url('https://go.updates.iata.org/l/123902/2023-05-02/j1vchy/123902/1683061996Q84G9BBl/right_background_image_groupA.webp');
+        		background-repeat: no-repeat;
+        		background-size: cover;
+                    align-items: center;
+        		display: none; /* Hide by default */
+        	}
+        
+        	/* Show right column on desktop devices */
+        	@media only screen and (min-width: 992px) {
+        		.right {
+        			display: block;
+        		}
+        	}
+                
+        .course {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        
+        .img-course-left {
+          flex-basis: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          order: 1;
+        }
+        
+        .txt-course-right {
+          flex-basis: 50%;
+          display: flex;
+          flex-direction: column;
+          order: 2;
+        }
+        
+        .course-row {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-bottom: 10px;
+        }
+        
+        .img-course-left img {
+          max-height: 350px;
+        }
+                
+        .course2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        
+        .img-course-right {
+          flex-basis: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          order: 2;
+        }
+        
+        .txt-course-left {
+          flex-basis: 50%;
+          display: flex;
+          flex-direction: column;
+          order: 1;
+        }
+        
+        
+        .img-course-right img {
+          max-height: 350px;
+        }
+        /* --------------------------
+        WARNING: EDITING THE BELOW CSS MIGHT BREAK THE TEMPLATE. 
+        --------------------------*/
+        	
+        	
+                
+        	.logo {
+        		padding: 20px 0px 20px 0px;
+        		text-align: left;
+        	}
+        	
+        	.headline {
+        		padding: 0 0 15px 0;
+        	}
+        	.description {
+        		color: #000;
+        		font-size: 27px;
+        		line-height: 110%;
+                    padding: 0 0 15px 0;
+        	}
+        
+        	
+        
+        	/* BODY */
+        	.citation{
+        		font-family: 'Arial', sans-serif;
+        		background-color: #ffffff;
+        		color: #000;
+        		font-size: 16px;
+        		line-height: initial;
+        		padding: 20px 0px;
+        	}
+        	
+        
+        	/* FOOTER */
+        	.social-footer{
+        		background-color: #ffffff;
+        		padding: 10px 0;
+        	}
+        	.social-footer .container{
+        		max-width: 680px;
+        		padding: 0;
+        	}
+        	.footer {
+        		padding: 20px;
+        		font-size: 11px;
+        		color: #cccccc;
+        		line-height: 18px;
+        		font-family: Arial, Helvetica, sans-serif;
+        		background-color: #535151;
+        		text-align: center;
+        	}
+        
+        	/** Responsive **/
+        	@media only screen and (max-width: 480px) {
+        		ul.social {
+        			text-align: center !important;
+        		}
+        		.copyright {
+        			text-align: center;
+        			padding-bottom: 10px;
+        		}
+        		form.form input[type=submit] {
+        			width: 100%;
+        			padding-top: 12px;
+        			padding-bottom: 12px;
+        			
+        		}
+        		h1 {
+        			font-size: 30px;
+        			line-height: 35px;
+        		}
+        		h2 {
+        			font-size: 22px;
+        			line-height: 28px;
+        		}
+        		.headline {
+        			padding-bottom: 15px;
+        		}
+        	}
+        	@media only screen and (max-width: 668px) {
+        		.headline-container {
+        			width: 100%;
+        			margin: 0 auto;
+        			float: none;
+        			text-align: left;
+                        padding: 30px;
+        		}
+        		.logo {
+        			text-align: left;
+        		}
+        	}
+        	
+                
+        /* Stacking columns on small screens */
+        @media only screen and (max-width: 768px) {
+          .course {
+            flex-direction: column;
+          }
+        
+          
+          .img-course-left {
+            order: 1;
+            margin-bottom: 20px;
+          }
+          
+          .txt-course-right {
+            order: 2;
+          }
+            
+          .img-course-right {
+            order: 1;
+            margin-bottom: 20px;
+          }
+          
+          .txt-course-left {
+            order: 2;
+          }
+        }
+                
+        /* Define a custom class to hide the element on mobile and tablet */
+        .hide-on-mobile {
+          display: block;
+        }
+        
+        @media only screen and (max-width: 991.99px) {
+          /* Hide the element on screens smaller than 992px (tablet size) */
+          .hide-on-mobile {
+            display: none;
+          }
+        }
+        
+        /* Define a custom class to hide the element on desktop */
+        .hide-on-desktop {
+          display: block;
+        }
+        
+        @media only screen and (min-width: 992px) {
+          /* Hide the element on screens larger than 991px (desktop size) */
+          .hide-on-desktop {
+            display: none;
+          }
+        }
+        
+        	
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <section id="header" class="">
+        <div class="col col-left col-xs-12 col-sm-6 parent-div">
+            <!-- Left column container -->
+            <div class="child-element" style="display: flex; flex-direction: column; justify-content: center; align-items: left; padding: 30px; color: #000;" data-aos="fade-right" data-aos-easing="ease-in">
+                <!-- First row -->
+                <div> <img alt="IATA Logo" src="https://go.updates.iata.org/l/123902/2023-05-03/j1vd12/123902/1683087117YP9lojh0/Logo_IATA.webp" style="width: 100px; height: 62px;"> </div> <!-- Second row -->
+                <div style="margin-top: 20px;">
+                    <h1>You are a<br>SeMS Mentor!</h1>
+                </div> <!-- Third row -->
+                <div style="margin-top: 20px;">
+                    <p style="font-size: 18px; line-height: 18px; font-family: aktiv-grotesk, arial, sans-serif;">Thanks for completing the IATA SeMS Evaluation Test. Congratulations, you are a SeMS Mentor!</p>
+                </div> <!-- Fourth row -->
+                <div style="margin-top: 20px;">
+                    <p style="font-size: 14px; line-height: 16px;">You are very well advanced in the subject and seem to have established SeMS fundamentals. To keep up with latest developments we recommend you stay abreast of the most recent publications and news on SeMS. This can also help you and your organization to support development of SeMS in the industry as a whole and mentor those in need of advice and guidance.<br><br>In order to maintain your high level of maturity or even bolster your SeMS, you should:</p>
+                    <ul>
+                        <li>Ensure your processes remain consistent and procedures updated</li>
+                        <li>Ensure you use your resources effectively to address issues highlighted by outcomes of risk assessment</li>
+                        <li>Further promote SeMS with security services providers your organization subcontracts or would like to outsource to in the future</li>
+                        <li>Include SeMS principles in your change management processes</li>
+                    </ul>
+                </div> <!-- Fifth row -->
+                <div style="margin-top: 0px; text-align: center;"> <img alt="arrow" src="https://go.updates.iata.org/l/123902/2023-05-03/j1vczy/123902/168308693761kZTues/arrow.webp" style="height: 50px; width: 99px;"> </div>
+            </div>
+        </div>
+        <div class="col col-right col-sm-6 hidden-xs"> </div>
+    </section> <!-- Big Paragraph section -->
+    <div style="background-color: #ffffff; overflow: hidden; padding-top: 30px;">
+        <div class="container">
+            <div class="row" style="overflow: hidden;">
+                <div class="col-md-12" style="padding: 20px;">
+                    <div style="">
+                        <p id="new" style="color: #000000; font-size: 40px; line-height: 125%; font-weight: bold; text-align: left; font-family: aktiv-grotesk, arial, sans-serif;">To further enhance your SeMS, you should have a look at the solutions below, tied to the advanced level of security of your organization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- (SeMS) Image to the left, Text to the right section -->
+    <div style="background-color: #ffffff; overflow: hidden;">
+        <div class="container">
+            <div class="course" style="padding: 30px 0px;" data-aos="fade-up">
+                <div class="col-md-6 img-course-left"> <img alt="SeMS" src="https://go.updates.iata.org/l/123902/2023-05-02/j1vcj2/123902/1683062108gkpZ6C2k/manual01.webp" style="width: 340px; height: 320px;"> </div>
+                <div class="col-md-6 txt-course-right" style="">
+                    <div class="course-row">
+                        <p style="margin: 0; color: #000; font-weight: bold; font-size: 20px; text-align: left; line-height: 125%;">Security Management<br>System Manual (SeMS)</p>
+                    </div>
+                    <div class="course-row">
+                        <p style="color: #000; margin: 0; text-align: left; font-size: 14px; line-height: 16px;">Updated annually, it will help you stay informed about the most recent developments and updates in the scope of SeMS. We expect you already have the latest edition. If that’s not the case, this is the right time to get up to date with the latest SeMS developments.</p>
+                    </div>
+                    <div class="course-row"> <a href="https://www.iata.org/sems/?utm_source=Pardot&utm_medium=Thank-you-page&utm_campaign=Themed-Security&utm_content=learn-more&utm_term=sems-manual" target="_blank"><img alt="Learn More" src="https://go.updates.iata.org/l/123902/2023-05-02/j1vcj8/123902/1683062191jB1EhV1r/cta_learn_more.webp" style="width: 150px; height: 31px;"></a> </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- (IRRM) section Desktop -->
+    <div class="hide-on-mobile" style="background-color: #EFEFEF; overflow: hidden;">
+        <div class="container">
+            <div class="course" style="padding: 30px 0px; background-color: #EFEFEF;" data-aos="fade-up">
+                <div class="col-md-6 txt-course-left" style="">
+                    <div class="course-row">
+                        <p style="margin: 0; color: #000; font-weight: bold; font-size: 20px; text-align: left; line-height: 125%;">Integrated Risk and Resilience<br>Management Manual (IRRM)</p>
+                    </div>
+                    <div class="course-row">
+                        <p style="color: #000; margin: 0; text-align: left; font-size: 14px; line-height: 16px;">It will facilitate your potential internal discussions around integrating many different risk assessment approaches (safety, security, occupational health and safety, etc) and emergency response.</p>
+                    </div>
+                    <div class="course-row"> <a href="https://www.iata.org/irrm/?utm_source=Pardot&utm_medium=Thank-you-page&utm_campaign=Themed-Security&utm_content=learn-more&utm_term=irrm-manual" target="_blank"><img src="https://go.updates.iata.org/l/123902/2023-05-02/j1vchv/123902/1683061771CWzn87R4/cta02.webp" style="margin: 0; width: 150px; height: 31px;"></a> </div>
+                </div>
+                <div class="col-md-6 img-course-right" style=""> <img alt="IRRM" src="https://go.updates.iata.org/l/123902/2023-05-02/j1vcjc/123902/1683062299ULM3iBZF/manual02.webp" style="height: 320px; width: 340px;"> </div>
+            </div>
+        </div>
+    </div> <!-- (IRRM) section Mobile -->
+    <div class="hide-on-desktop" style="background-color: #efefef; overflow: hidden;">
+        <div class="container">
+            <div class="course" style="padding: 30px 0px;" data-aos="fade-up">
+                <div class="col-md-6 img-course-left" style=""> <img alt="IRRM" src="https://go.updates.iata.org/l/123902/2023-05-02/j1vcjc/123902/1683062299ULM3iBZF/manual02.webp" style="height: 320px; width: 340px;"> </div>
+                <div class="col-md-6 txt-course-right" style="">
+                    <div class="course-row">
+                        <p style="margin: 0; color: #000; font-weight: bold; font-size: 20px; text-align: left; line-height: 125%;">Integrated Risk and Resilience<br>Management Manual (IRRM)</p>
+                    </div>
+                    <div class="course-row">
+                        <p style="color: #000; margin: 0; text-align: left; font-size: 14px; line-height: 16px;">It will facilitate your potential internal discussions around integrating many different risk assessment approaches (safety, security, occupational health and safety, etc) and emergency response.</p>
+                    </div>
+                    <div class="course-row"> <a href="https://www.iata.org/irrm/?utm_source=Pardot&utm_medium=Thank-you-page&utm_campaign=Themed-Security&utm_content=learn-more&utm_term=irrm-manual" target="_blank"><img alt="Learn More" src="https://go.updates.iata.org/l/123902/2023-05-02/j1vchv/123902/1683061771CWzn87R4/cta02.webp" style="margin: 0; width: 150px; height: 31px;"></a> </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- (AVSEC) Image to the left, Text to the right section -->
+    <div style="background-color: #ffffff; overflow: hidden;">
+        <div class="container">
+            <div class="course" style="padding: 30px 0px;" data-aos="fade-up">
+                <div class="col-md-6 img-course-left" style=""> <img alt="AVSEC" src="https://go.updates.iata.org/l/123902/2023-05-02/j1vcrc/123902/1683062412T7IM7cp7/img03.webp" style="height: 320px; width: 340px;"> </div>
+                <div class="col-md-6 txt-course-right" style="">
+                    <div class="course-row">
+                        <p style="margin: 0; color: #000; font-weight: bold; font-size: 20px; text-align: left; line-height: 125%;">AVSEC Insight</p>
+                    </div>
+                    <div class="course-row">
+                        <p style="color: #000; margin: 0; text-align: left; font-size: 14px; line-height: 16px;">For organizations with advanced SeMS knowledge like yours, AVSEC Insight further elevates their operations. Using open-source intelligence and advanced analytics, it provides real-time insights and predictive modeling of security risks, advanced risk assessment methodologies, and proactive measures to mitigate risks and stay ahead of emerging threats.</p>
+                    </div>
+                    <div class="course-row"> <a href="https://www.iata.org/avsec-insight/?utm_source=Pardot&utm_medium=Thank-you-page&utm_campaign=Themed-Security&utm_content=learn-more&utm_term=avsec-insight" target="_blank"><img alt="Learn More" src="https://go.updates.iata.org/l/123902/2023-05-02/j1vcj8/123902/1683062191jB1EhV1r/cta_learn_more.webp" style="margin: 0; width: 150px; height: 31px;"></a> </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Training section Desktop -->
+    <div class="hide-on-mobile" style="background-color: #EFEFEF; overflow: hidden;" data-aos="fade-up">
+        <div class="container">
+            <div class="col-md-12" style="padding: 30px 40px 10px;">
+                <p style="margin: 0; color: #000; font-weight: bold; font-size: 20px; text-align: left; line-height: 125%;">Training</p><br>
+                <p style="color: #000; margin: 0; text-align: left; font-size: 14px; line-height: 16px;">From experts for experts: IATA’s security training curriculum includes 18 advanced-level courses that can help your organization maintain and evolve its robust Security Management System. Nurture expert security skills among your staff to safeguard your position as an industry leader and consistently meet and benefit from the latest security standards.</p>
+            </div>
+            <div class="col-md-12 vcenter-item" style="padding: 0px 0 20px;">
+                <div class="col-md-4" style="padding: 10px 40px;">
+                    <p style="margin: 0; color: #000; font-weight: normal; font-size: 14px; text-align: left; line-height: 125%;"><b>Aviation Security Management - Advanced</b><br>English | Classroom &amp; Virtual Classroom</p>
+                    <p style="margin: 0; color: #000; font-weight: bold; font-size: 20px; text-align: left; line-height: 125%; padding-top: 10px;"><a href="https://www.iata.org/en/training/courses/aviation-security/tscv02/en/?utm_source=Pardot&utm_medium=Thank-you-page&utm_campaign=Themed-Security&utm_content=learn-more&utm_term=training-aviation-security-management" target="_blank"><img src="https://go.updates.iata.org/l/123902/2023-05-02/j1vchv/123902/1683061771CWzn87R4/cta02.webp" style="margin: 0; width: 150px; height: 31px;"></a></p> <br>
+                    <p style="margin: 0; color: #000; font-weight: normal; font-size: 14px; text-align: left; line-height: 125%;"><b>Integrated Security Risk Management and Resilience</b><br>English | Classroom</p>
+                    <p style="margin: 0; color: #000; font-weight: bold; font-size: 20px; text-align: left; line-height: 125%; padding-top: 10px;"><a href="https://www.iata.org/en/training/courses/security-risk-management/tscs14/en/?utm_source=Pardot&utm_medium=Thank-you-page&utm_campaign=Themed-Security&utm_content=learn-more&utm_term=training-security-risk-management" target="_blank"><img src="https://go.updates.iata.org/l/123902/2023-05-02/j1vchv/123902/1683061771CWzn87R4/cta02.webp" style="margin: 0; width: 150px; height: 31px;"></a></p>
+                </div>
+                <div class="col-md-4" style="padding: 10px 40px;">
+                    <p style="margin: 0; color: #000; font-weight: normal; font-size: 14px; text-align: left; line-height: 125%;"><b>Security Audit and <br>Quality Control</b><br>English | Classroom &amp; Virtual Classroom</p>
+                    <p style="margin: 0; color: #000; font-weight: bold; font-size: 20px; text-align: left; line-height: 125%; padding-top: 10px;"><a href="https://www.iata.org/en/training/courses/security-audit-virtual/tscs10/en/?utm_source=Pardot&utm_medium=Thank-you-page&utm_campaign=Themed-Security&utm_content=learn-more&utm_term=training-security-audit" target="_blank"><img src="https://go.updates.iata.org/l/123902/2023-05-02/j1vchv/123902/1683061771CWzn87R4/cta02.webp" style="margin: 0; width: 150px; height: 31px;"></a></p> <br>
+                    <p style="margin: 0; color: #000; font-weight: normal; font-size: 14px; text-align: left; line-height: 125%;"><b>Security Management System (SeMS) Competency Test</b><br>English | Assessment tool</p>
+                    <p style="margin: 0; color: #000; font-weight: bold; font-size: 20px; text-align: left; line-height: 125%; padding-top: 10px;"><a href="https://www.iata.org/en/training/courses/sems-competency-test/tscs63/en/?utm_source=Pardot&utm_medium=Thank-you-page&utm_campaign=Themed-Security&utm_content=learn-more&utm_term=training-sems-competency-test" target="_blank"><img src="https://go.updates.iata.org/l/123902/2023-05-02/j1vchv/123902/1683061771CWzn87R4/cta02.webp" style="margin: 0; width: 150px; height: 31px;"></a></p>
+                </div>
+                <div class="col-md-4 text-center " style="padding: 10px 40px;"> <img src="https://go.updates.iata.org/l/123902/2023-05-02/j1vcrg/123902/16830624962BOrM2wW/training.webp" style="height: 215px; width: 215px;"> </div>
+            </div>
+        </div>
+    </div> <!-- Training section Mobile -->
+    <div class="hide-on-desktop" style="background-color: #efefef; overflow: hidden;" data-aos="fade-up">
+        <div class="container">
+            <div class="course" style="padding: 30px 0px;">
+                <div class="img-course-left"> <img alt="Training" src="https://go.updates.iata.org/l/123902/2023-05-02/j1vcrg/123902/16830624962BOrM2wW/training.webp" style="width: 320px; height: 320px;"> </div>
+                <div class="txt-course-right">
+                    <div class="course-row">
+                        <p style="margin: 0; color: #000; font-weight: bold; font-size: 20px; text-align: left; line-height: 125%;">Training</p>
+                    </div>
+                    <div class="course-row">
+                        <p style="color: #000; margin: 0; text-align: left; font-size: 14px; line-height: 16px;">From experts for experts: IATA’s security training curriculum includes 18 advanced-level courses that can help your organization maintain and evolve its robust Security Management System. Nurture expert security skills among your staff to safeguard your position as an industry leader and consistently meet and benefit from the latest security standards.</p>
+                    </div>
+                    <div class="course-row">
+                        <p style="margin: 0; color: #000; font-weight: normal; font-size: 14px; text-align: left; line-height: 125%;"><b>Aviation Security Management - Advanced</b><br>English | Classroom &amp; Virtual Classroom</p>
+                    </div>
+                    <div class="course-row"> <a href="https://www.iata.org/en/training/courses/aviation-security-advanced/tscv01/en/" target="_blank"><img alt="Learn More" src="https://go.updates.iata.org/l/123902/2023-05-02/j1vchv/123902/1683061771CWzn87R4/cta02.webp" style="margin: 0; width: 150px; height: 31px;"></a> </div>
+                    <div class="course-row">
+                        <p style="margin: 0; color: #000; font-weight: normal; font-size: 14px; text-align: left; line-height: 125%;"><b>Integrated Security Risk Management and Resilience</b><br>English | Classroom</p>
+                    </div>
+                    <div class="course-row"> <a href="https://www.iata.org/en/training/courses/security-risk-management/tscs14/en/" target="_blank"><img alt="Learn More" src="https://go.updates.iata.org/l/123902/2023-05-02/j1vchv/123902/1683061771CWzn87R4/cta02.webp" style="margin: 0; width: 150px; height: 31px;"></a> </div>
+                    <div class="course-row">
+                        <p style="margin: 0; color: #000; font-weight: normal; font-size: 14px; text-align: left; line-height: 125%;"><b>Security Audit and Quality Control</b><br>English | Classroom &amp; Virtual Classroom</p>
+                    </div>
+                    <div class="course-row"> <a href="https://www.iata.org/en/training/courses/security-audit-virtual/tscs10/en/" target="_blank"><img alt="Learn More" src="https://go.updates.iata.org/l/123902/2023-05-02/j1vchv/123902/1683061771CWzn87R4/cta02.webp" style="margin: 0; width: 150px; height: 31px;"></a> </div>
+                    <div class="course-row">
+                        <p style="margin: 0; color: #000; font-weight: normal; font-size: 14px; text-align: left; line-height: 125%;"><b>Security Management System (SeMS) Competency Test</b><br>English | Assessment tool</p>
+                    </div>
+                    <div class="course-row"> <a href="https://www.iata.org/en/training/courses/sems-competency-test/tscs63/en/" target="_blank"><img alt="Learn More" src="https://go.updates.iata.org/l/123902/2023-05-02/j1vchv/123902/1683061771CWzn87R4/cta02.webp" style="margin: 0; width: 150px; height: 31px;"></a> </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- (Consulting) Image to the left, Text to the right section -->
+    <div style="background-color: #ffffff; overflow: hidden;">
+        <div class="container">
+            <div class="course" style="padding: 30px 0px;" data-aos="fade-up">
+                <div class="col-md-6 img-course-left" style=""> <img alt="Consulting" src="https://go.updates.iata.org/l/123902/2023-05-02/j1vchr/123902/1683061662OUdNSyJW/img04.webp" style="width: 320px; height: 320px;"> </div>
+                <div class="col-md-6 txt-course-right" style="">
+                    <div class="course-row">
+                        <p style="margin: 0; color: #000; font-weight: bold; font-size: 20px; text-align: left; line-height: 125%;">Consulting</p>
+                    </div>
+                    <div class="course-row">
+                        <p style="color: #000; margin: 0; text-align: left; font-size: 14px; line-height: 16px;">IATA Consulting can help you maintain your high level of maturity &amp; position as an industry leader through conducting impartial peer reviews of your SeMS systems, highlighting potential improvements in risk management, data evaluation, efficiency gains, and vulnerability analysis.</p>
+                    </div>
+                    <div class="course-row"> <a href="https://www.iata.org/en/services/consulting/airport-pax-security/security/?utm_source=Pardot&utm_medium=Thank-you-page&utm_campaign=Themed-Security&utm_content=learn-more&utm_term=consulting" target="_blank"><img alt="Learn More" src="https://go.updates.iata.org/l/123902/2023-05-02/j1vcj8/123902/1683062191jB1EhV1r/cta_learn_more.webp" style="margin: 0; width: 150px; height: 31px;"></a> </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Footer section -->
+    <div class="footer">
+        <div class="container">
+            <ul style="padding: 0;">
+                <li style="list-style-type: none; display: inline; padding: 0 15px;"> <a href="https://twitter.com/iata" target="_blank" style="color: #ffffff; text-decoration: none;"><i class="fab fa-twitter" style="font-size: 20px;"></i></a> </li>
+                <li style="list-style-type: none; display: inline; padding: 0 15px;"> <a href="https://www.facebook.com/iata.org" target="_blank" style="color: #ffffff; text-decoration: none;"><i class="fab fa-facebook-f" style="font-size: 20px;"></i></a> </li>
+                <li style="list-style-type: none; display: inline; padding: 0 15px;"> <a href="https://www.linkedin.com/company/international-air-transport-association-iata" target="_blank" style="color: #ffffff; text-decoration: none;"><i class="fab fa-linkedin-in" style="font-size: 20px;"></i></a> </li>
+                <li style="list-style-type: none; display: inline; padding: 0 15px;"> <a href="https://www.youtube.com/iatatv" target="_blank" style="color: #ffffff; text-decoration: none;"><i class="fab fa-youtube" style="font-size: 20px;"></i></a> </li>
+            </ul>
+            <p>International Air Transport Association - 800, Square Victoria - Montreal, H4Z 1M1 - Canada</p>
+            <p><a conversion="true" href="http://www.iata.org/about/Pages/index.aspx" style="color:#ffffff;" target="_blank">About Us</a> - <a conversion="true" href="http://www.iata.org/whatwedo/Pages/index.aspx" style="color:#ffffff;" target="_blank">Programs</a> - <a conversion="true" href="http://www.iata.org/policy/Pages/default.aspx" style="color:#ffffff;" target="_blank">Policy</a> &nbsp;-&nbsp; <a conversion="true" href="http://www.iata.org/publications/Pages/index.aspx" style="color:#ffffff;" target="_blank">Publications</a> &nbsp;-&nbsp; <a conversion="true" href="http://www.iata.org/services/Pages/index.aspx" style="color:#ffffff;" target="_blank">Services</a> &nbsp;-&nbsp; <a conversion="true" href="http://www.iata.org/training/Pages/index.aspx" style="color:#ffffff;" target="_blank">Training</a> &nbsp;-&nbsp; <a conversion="true" href="http://www.iata.org/events/Pages/index.aspx" style="color:#ffffff;" target="_blank">Events</a> &nbsp;-&nbsp; <a conversion="true" href="http://www.iata.org/pressroom/Pages/index.aspx" style="color:#ffffff;" target="_blank">Pressroom</a></p>
+            <p>IMPORTANT PRIVACY INFORMATION:<br> The International Air Transport Association (IATA) does not sell or rent your email address to any third party. You received this email message due to your membership, participation or interest in IATA. IATA sends various advertisements, promotions and special announcements regarding products and services that we feel may be of interest to you.</p>
+            <p>&copy; Copyright 2023. All rights reserved.</p>
+            <p><a href="http://www.iata.org/Pages/privacy.aspx" style="color:#ffffff;" target="_blank">Privacy Policy </a> | <a href="http://www.iata.org/Pages/contact.aspx" style="color:#ffffff;" target="_blank"> Contact Us</a></p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var $window = $(window);
+            var $formPosition = $('.form-position');
+            function formPosition() {
+                if ($window.width() < 960) {
+                    $formPosition.insertAfter('.highlight');
+                }
+                else {
+                    $formPosition.insertBefore('.highlight');
+                }
+            }
+            formPosition();
+            $window.on('resize', function() {
+                formPosition();
+            });
+        });
+    </script> <!-- AdRoll Pixel -->
+    <script type="text/javascript">
+        adroll_adv_id = "AHW2E66F75EETC67CSYCSS";
+        adroll_pix_id = "JJVGJIJFTRFWBJ2JYF2GR2";
+        (function() {
+            var _onload = function() {
+                var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+                var scr = document.createElement("script");
+                scr.setAttribute("defer", "");
+                scr.textContent = "adroll_adv_id = '" + adroll_adv_id + "';\n";
+                scr.textContent += "adroll_pix_id = '" + adroll_pix_id + "';\n";
+                scr.textContent += "var scrl = document.createElement('script');\n";
+                scr.textContent += "scrl.type = 'text/javascript';\n";
+                scr.textContent += "scrl.src = '" + host + "/j/roundtrip.js';\n";
+                scr.textContent += "((document.getElementsByTagName('head') || [null])[0] || document.getElementsByTagName('script')[0].parentNode).appendChild(scrl);\n";
+                if (window.addEventListener) {
+                    window.addEventListener('load', _onload, false);
+                } else {
+                    window.attachEvent('onload', _onload);
+                }
+            };
+            _onload();
+        }());
+    </script> 
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T883LZ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
